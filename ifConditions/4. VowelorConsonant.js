@@ -1,6 +1,6 @@
-let input="4";
-if ("abcdefghijklmnopqrstuvwxyz".includes(input)){
-    if (/^a-zA-Z$/.includes(input)){
+let input="a";
+if (/^[A-Za-z]$/.test(input)){
+    if ("aeiou".includes(input)){
     console.log("vowelor");
     } else {
     console.log("consonant");
