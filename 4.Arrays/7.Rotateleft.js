@@ -10,13 +10,13 @@ for (let i = rotate ; i < input.length;i++) {
     ans.push(input[i])
 } ans.push(...input.slice(0,rotate))
 console.log(ans)
+
+
 const res = [];
 for (let i = 0; i < input.length; i++) {
   if (i < rotate) {
-    console.log(res)
     res[input.length - rotate + i] = input[i];
   } else {
-    console.log(res)
     res[i - rotate] = input[i];
   }
 }
