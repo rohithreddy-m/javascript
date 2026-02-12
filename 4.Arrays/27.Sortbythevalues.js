@@ -1,6 +1,5 @@
 const input={"a":2,"n":9,"u":1}
 let list=[]
-let smallNumber=Infinity
 for (let i in input) {
     list.push([i,input[i]])
 }
