@@ -11,4 +11,4 @@ function PerfectNumber(input) {
         console.log(`${input} is Not PerfectNumbet.`)
     }
 }
-PerfectNumber(28)
+PerfectNumber(8128)
