@@ -6,23 +6,24 @@ function Hourglassnumbers(num) {
         let ans=""
         let ansr=""
         for (let j=1;j<=num-countOne;j++) {
-            ansr+=j
+            ansr+=j+" "
         }
         let rev=ansr
-        rev=rev.split("").reverse()
-        rev.shift()   
+        rev=rev.split(" ").reverse()
+        rev.splice(0,2)   
+        ansr=ansr.split(" ").join("")
         ans=" ".repeat(countOne)+ansr+rev.join("")
         console.log(ans)
         countOne++
     } else { 
-        // console.log(countOne-1)
         let ans=""
         let ansr=""
         for (let j =1; j<=countTwo;j++ ) {
-            ansr+=j
+            ansr+=j+" "
         } let rev=ansr
-        rev=rev.split("").reverse()
-        rev.shift()
+        rev=rev.split(" ").reverse()
+        rev.splice(0,2)
+        ansr=ansr.split(" ").join("")
         ans=" ".repeat(countOne-2)+ansr+rev.join("")
         console.log(ans)
         countTwo++
@@ -31,7 +32,7 @@ function Hourglassnumbers(num) {
     }
     }
 }
-let num=11
+let num=7
 Hourglassnumbers(num) 
 // 1 2 3 4 5 4 3 2 1
 //   1 2 3 4 3 2 1
