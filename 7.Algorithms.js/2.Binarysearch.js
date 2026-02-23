@@ -14,8 +14,8 @@ function Binarysearch(list,char) {
         }
     } return -1
 }
-let list=[2,7,4,33,4,5,6,7,8]
-let char=0
+let list=[1,2,3,4,5,6,7,8,9]
+let char=8
 let Res=Binarysearch(list,char)
 if (Res != -1) {
     console.log(`The index of give number ${Res}`)
